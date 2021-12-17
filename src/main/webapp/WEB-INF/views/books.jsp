@@ -26,6 +26,16 @@
   background-color: #006bb3;
   color: white;
 }
+button {
+	color: white; 
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+  	background-color: #006bb3;
+  	border:1px  #006bb3 solid;
+  	border-radius: 7px;
+}
+button:hover {background-color: #003f69;}
 </style>
 <script>
 	function delete_ok(id){

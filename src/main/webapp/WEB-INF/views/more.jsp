@@ -13,6 +13,16 @@ table{
 	width: 80%;
 }
 
+#button {
+	color: white; 
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+  	background-color: #006bb3;
+  	border:1px  #006bb3 solid;
+  	border-radius: 7px;
+}
+
 #more th {	
   padding-top: 12px;
   padding-bottom: 12px;
@@ -32,6 +42,8 @@ table{
 	border-bottom: 1px solid #444444;
     border-right: 1px solid #444444;
 }
+
+#button:hover {background-color: #003f69;}
 </style>
 </head>
 <body>
@@ -49,7 +61,7 @@ table{
 			<tr><th>줄거리 및 느낀 점</th><td>${reportVO.summary}</td></tr>
 		</table>
 		<br>
-		<input type="button" value="돌아가기" onclick="history.back()">
+		<input id=button type="button" value="돌아가기" onclick="history.back()">
 	</form:form>
 </body>
 </html>
