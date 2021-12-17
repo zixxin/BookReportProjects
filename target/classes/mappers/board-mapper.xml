@@ -7,9 +7,7 @@
 	</insert>
 	
 	<update id="updateBook">
-		update book
-		set title=#{title}, genre=#{genre}, author=#{author}, publish=#{publish}, year=#{year}, summary=#{summary} 
-		where id=#{id}
+		update book set title=#{title}, genre=#{genre}, author=#{author}, publish=#{publish}, year=#{year}, summary=#{summary} where id=#{id}
 	</update>
 	
 	<delete id="deleteBook">

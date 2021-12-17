@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Report">
+	<insert id="insertBook">
+		insert into book (title, genre, author, publish, year, summary) values
+		(#{title}, #{genre}, #{author}, #{publish}, #{year}, #{summary})
+	</insert>
+	
+	<update id="updateBook">
+		update book set title=#{title}, genre=#{genre}, author=#{author}, publish=#{publish}, year=#{year}, summary=#{summary} where id=#{id}
+	</update>
+	
+	<delete id="deleteBook">
+		delete from book where id=#{id}
+	</delete>
+	
+	<select id="getBook" resultType="report">
+		select * from book where id=#{id}
+	</select>
+	
+	<select id="getBookList" resultType="report">
+		select * from book order by id desc
+	</select>
+</mapper>

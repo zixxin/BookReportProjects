@@ -8,7 +8,7 @@ public class ReportVO {
 	private String genre;
 	private String author;
 	private String publish;
-	private int year;
+	private	String year;
 	private String summary;
 	private int cnt;
 	
@@ -39,7 +39,7 @@ public class ReportVO {
 	public String getSummary() {
 		return summary;
 	}
-	public void setContents(String summary) {
+	public void setSummary(String summary) {
 		this.summary = summary;
 	}
 	public String getPublish() {
@@ -48,10 +48,10 @@ public class ReportVO {
 	public void setPublish(String publish) {
 		this.publish = publish;
 	}
-	public int getYear() {
+	public String getYear() {
 		return year;
 	}
-	public void setYear(int year) {
+	public void setYear(String year) {
 		this.year = year;
 	}
 	public int getCnt() {

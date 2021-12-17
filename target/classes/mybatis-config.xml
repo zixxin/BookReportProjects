@@ -5,6 +5,6 @@
 <configuration>
 	<typeAliases>
 		<typeAlias alias="report" type="com.book.report.ReportVO" />
-		<typeAlias alias="user" type="com.book.report.UserVO" />
 	</typeAliases>
+
 </configuration>

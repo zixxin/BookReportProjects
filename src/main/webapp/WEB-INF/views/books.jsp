@@ -40,12 +40,13 @@
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>
-	<th>Title</th>
-	<th>Genre</th>
-	<th>Author</th>
-	<th>Publish Date</th>
-	<th>Edit</th>
-	<th>Delete</th>
+	<th>제목</th>
+	<th>장르</th>
+	<th>저자</th>
+	<th>출판일</th>
+	<th>상세보기</th>
+	<th>수정</th>
+	<th>삭제</th>
 </tr>
 <c:forEach items="${list}" var="u">
 	<tr>
@@ -54,6 +55,7 @@
 		<td>${u.genre}</td>
 		<td>${u.author}</td>
 		<td>${u.year}</td>
+		<td><a href="more/${u.id}">More</a>
 		<td><a href="editpost/${u.id}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.id}')">Delete</a></td>
 	</tr>
