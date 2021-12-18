@@ -36,6 +36,13 @@ public class ReportController {
 		return "redirect:list";
 	}
 	
+	@RequestMapping(value = "/more/{id}", method = RequestMethod.GET)
+	public String loadmore(@PathVariable("id") int id, Model model) {
+		ReportVO reportVO = bookService.getBook(id);
+		model.addAttribute("reportVO", reportVO);
+		return "more";
+	}
+	
 	// 수정하지 않았음 !!
 	@RequestMapping(value = "/editpost/{id}", method = RequestMethod.GET)
 	public String editBook(@PathVariable("id") int id, Model model) {
